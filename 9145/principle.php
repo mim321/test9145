@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://nickzaahhaahha.github.io/HCI_work6/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/summernote/summernote-bs4.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+<!--
+เนื่องจากมีปัญหาการ load font ข้ามเครื่อง ผ่านแฟ้ม all.min.css
+จึงเพิ่มการกำหนด font-face และเรียกแฟ้มใน current folder
+- https://adminlte.io/themes/v3/plugins/fontawesome-free/css/all.min.css
+- https://www.farahimpex.com/vendor/jeroennoten/laravel-adminlte/resources/assets/vendor/font-awesome/webfonts/
+github.io
+- https://nickzaahhaahha.github.io/HCI_work6/
+- https://github.com/Nickzaahhaahha/HCI_work6
+- https://nickzaahhaahha.github.io/HCI_work6/fontawesome-free/css/all.min.css
+- http://thaiall.github.io/www/adminlte/adminlte_github.htm
+--> 
+ 
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li><li class="nav-item d-none d-sm-inline-block">
+
+<!-- Notifications Dropdown Menu -->
+<li class="nav-item dropdown">
+  <a class="nav-link" data-toggle="dropdown" href="#">AdminLTE</a>
+  <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
+    <div class="dropdown-divider"></div>
+    <a href="https://github.com/mim321/photokaa/blob/main/protfolio.pdf" class="nav-link">protfolio</a>
+    <div class="dropdown-divider"></div>
+    <a href="https://www.facebook.com/Bumble-MIM-109172497597415/?view_public_for=109172497597415" class="nav-link">page</a>
+    <div class="dropdown-divider"></div>
+    <a href="http://www.thaiall.com/adminlte/adminlte_fa_font.rar" class="nav-link">font.rar</a>
+    <div class="dropdown-divider"></div>
+    <a href="http://www.thaiall.com/adminlte/adminlte.htm" class="nav-link">htm</a>
+    <div class="dropdown-divider"></div>
+    <a href="https://thaiall.github.io/www/adminlte/adminlte_github.htm" class="nav-link">github.io</a>
+    <div class="dropdown-divider"></div>
+    <a href="http://www.thaiall.com/adminlte/adminlte_mygitfriends.htm" class="nav-link">mygitfriends @thaiall</a>
+    <div class="dropdown-divider"></div>
+    <a href="https://thaiall.github.io/mygitfriends/adminlte_mygitfriends.htm" class="nav-link">mygitfriends</a>		
+  </div>
+</li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form action="http://www.google.com" class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-1 pb-1 mb-1 d-flex">
+          <img src="https://raw.githubusercontent.com/mim321/home/main/photo.jpeg" alt="User Image" style="height:30px;">
+        <div class="info">
+          <a href="https://github.com/thaiall/mygitfriends" class="d-block">Nichapa Kajan</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+          <!-- li class="nav-item has-treeview menu-open" -->
+
+		  <li class="nav-item has-treeview menu-close">
+            <a href="http://www.thaiall.com/me" class="nav-link">
+              <i class="nav-icon fas fa-gem"></i>
+              <p>
+                Social Media
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="https://www.facebook.com/mim.suchicha" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>Facebook</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.youtube.com/channel/UCHqdeiHTJPLjayV1gW-2Y7A?view_as=subscriber" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>Youtube</p>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a href="https://twitter.com/mymimmmm1" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>twitter</p>
+                </a>
+              </li>    
+              <li class="nav-item">
+                <a href="me.htm" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>About Me</p>
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a href="pyramid.html" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>pyramid</p>
+                </a>
+              </li>           
+            </ul>
+          </li>
+
+          <li class="nav-item has-treeview menu-close">
+            <a href="http://www.thaiall.com/me" class="nav-link">
+              <i class="nav-icon fas fa-gem"></i>
+              <p>
+                วิชาที่สนใจ
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="https://mim321.github.io/home/index.html" class="nav-link">
+                  <i class="fas fas fa-globe nav-icon"></i>
+                  <p>
+                    OS
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="https://www.youtube.com/watch?v=sBhiMvp8-eg&t=8s" class="nav-link">
+                      <i class="fas fa-arrow-circle-right nav-icon"></i>
+                      <p>Linux Mint</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://github.com/mim321/LINUX" class="nav-link">
+                      <i class="fas fa-arrow-circle-right nav-icon"></i>
+                      <p>Linux Cmd</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://github.com/mim321/CPSC241_621_sub" class="nav-link">
+                      <i class="fas fa-arrow-circle-right nav-icon"></i>
+                      <p>ศัพท์เทคนิค</p>
+                    </a>
+                  </li>                              
+                </ul>
+              </li>
+            </ul>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="https://mim321.github.io/home/index.html" class="nav-link">
+                    <i class="fas fas fa-globe nav-icon"></i>
+                    <p>
+                      hci
+                      <i class="right fas fa-angle-left"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="https://mim321.github.io/joom/joom.htm" class="nav-link">
+                        <i class="fas fa-arrow-circle-right nav-icon"></i>
+                        <p>joom</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://github.com/mim321/cpsc321_hci" class="nav-link">
+                        <i class="fas fa-arrow-circle-right nav-icon"></i>
+                        <p>5Page</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://mim321.github.io/adminLTE/index.html" class="nav-link">
+                        <i class="fas fa-arrow-circle-right nav-icon"></i>
+                        <p>adminLTE</p>
+                      </a>
+                    </li>                              
+                  </ul>
+                </li>
+              </ul>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="https://mim321.github.io/home/index.html" class="nav-link">
+                      <i class="fas fas fa-globe nav-icon"></i>
+                      <p>
+                        java
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://github.com/mim321/CPSC462_Java-/tree/master/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%A1%E0%B8%AD%E0%B8%9A%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%B5%E0%B9%88%204" class="nav-link">
+                          <i class="fas fa-arrow-circle-right nav-icon"></i>
+                          <p>BufferedReader</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="https://github.com/mim321/CPSC462_Java-/tree/master/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%A1%E0%B8%AD%E0%B8%9A%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%B5%E0%B9%88%206" class="nav-link">
+                          <i class="fas fa-arrow-circle-right nav-icon"></i>
+                          <p>array</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="https://github.com/mim321/CPSC462_Java-/tree/master/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%A1%E0%B8%AD%E0%B8%9A%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%B5%E0%B9%88%204" class="nav-link">
+                          <i class="fas fa-arrow-circle-right nav-icon"></i>
+                          <p>DOS</p>
+                        </a>
+                      </li>                              
+                    </ul>
+                  </li> 
+                </ul>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="https://mim321.github.io/home/index.html" class="nav-link">
+                        <i class="fas fas fa-globe nav-icon"></i>
+                        <p>
+                          php
+                          <i class="right fas fa-angle-left"></i>
+                        </p>
+                      </a>
+                      <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                          <a href="https://github.com/mim321/CPSC331_php/tree/master/HomeWork3?fbclid=IwAR14k9TGu4GjrhFz1KeBw0hp6stG6N3fndyhiFxffnJohInuY2qC6tDJSmM" class="nav-link">
+                            <i class="fas fa-arrow-circle-right nav-icon"></i>
+                            <p>Northwind8</p>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="https://github.com/mim321/cpsc331_PHP-HW4?fbclid=IwAR0Brv4h5_AOWVeslusl2_5TgHz7oTxXJreRsOe-Ry0IxTgZqOHK6Nzv5ZE" class="nav-link">
+                            <i class="fas fa-arrow-circle-right nav-icon"></i>
+                            <p>s0 - s7</p>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="https://imnicha.000webhostapp.com/mimall1.php?fbclid=IwAR1TV-ssrQgA8E32mazaRHqlLUsi6LdaLB1N36yXh04i15OFVEpTJqq3590" class="nav-link">
+                            <i class="fas fa-arrow-circle-right nav-icon"></i>
+                            <p>pyramid</p>
+                          </a>
+                        </li>                              
+                      </ul>
+                    </li>
+                  </ul>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="https://mim321.github.io/home/index.html" class="nav-link">
+                          <i class="fas fas fa-globe nav-icon"></i>
+                          <p>
+                            โครงสร้างข้อมูล
+                            <i class="right fas fa-angle-left"></i>
+                          </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                          <li class="nav-item">
+                            <a href="https://github.com/mim321/CPSC231_622_HW.11" class="nav-link">
+                              <i class="fas fa-arrow-circle-right nav-icon"></i>
+                              <p>Tree&compile</p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="https://github.com/mim321/-Homework7-CPSC231_622" class="nav-link">
+                              <i class="fas fa-arrow-circle-right nav-icon"></i>
+                              <p>postfix</p>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="https://github.com/mim321/cpsc231_622_Homework9" class="nav-link">
+                              <i class="fas fa-arrow-circle-right nav-icon"></i>
+                              <p>loop</p>
+                            </a>
+                          </li>                              
+                        </ul>
+                      </li> 
+                    </ul>
+                  </li>   
+
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="http://www.thaiall.com/me" class="nav-link">
+                      <i class="nav-icon fas fa-gem"></i>
+                      <p>
+                        โปรเจคที่สนใจ
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="http://www.research.rmutt.ac.th/wp-content/uploads/2014/03/133137.pdf?fbclid=IwAR0AfP4ElAJqw0ex-pZTqXrSFTIk3m39QBbKTeid_Y7qQGc51M1X6tSmvXw" class="nav-link">
+                          <i class="fas fa-angle-right nav-icon"></i>
+                          <p>คลินิก</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="https://www.dpu.ac.th/dpuir/upload/file/it_project/is/09.pdf?fbclid=IwAR0N_lQeuLFmyLMsNkhfiPvWFb4qE9pnD89UMMr_plxVm8CgdYTid8HbYyM" class="nav-link">
+                          <i class="fas fa-angle-right nav-icon"></i>
+                          <p>บริหารจัดการสปา</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li> 
+
+                  <li class="nav-item has-treeview menu-close">
+                    <a href="http://www.thaiall.com/me" class="nav-link">
+                      <i class="nav-icon fas fa-gem"></i>
+                      <p>
+                        โครงงานคอมพิวเตอร์ 1
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="9146.php" class="nav-link">
+                          <i class="fas fa-angle-right nav-icon"></i>
+                          <p>หลักการเเละเหตุ</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="9146.php" class="nav-link">
+                          <i class="fas fa-angle-right nav-icon"></i>
+                          <p>ตารางฐานข้อมูล</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li> 
+        
+          <li class="nav-item">
+            <a href="https://imnicha.000webhostapp.com/login//index.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Login myweb
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="https://thaiall.github.io/mygitfriends/adminlte_mygitfriends.htm" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                /My Git Friends
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>		
+		
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">  
+    <!-- Main content -->
+    <section class="content">
+
+<fieldset class="col-12 small-box" style="font-family:kanit;"><legend><b>หลักการและเหตุผล</b></legend>
+  <style>
+  .bigcap{float:left;font-size:60px;line-height:0.5;margin-top:5px;margin-right:5px;margin-left:5px;color:#000088}
+  </style>
+  
+</p>
+        ในชีวิตเราปัจจุบันเต็มไปด้วยความวุ่นวาย เร่งรีบ เพราะฉะนั้นเราจึงจำเป็นต้องมีความสามารถในการบริหารสิ่งต่างๆ ให้ลงตัวไม่ว่าจะเป็นด้านการเรียน เช่น เวลาในการอ่านหนังสือ การทำกิจกรรม การออกกำลังกาย การบริหารอารมณ์- จิตใจ และที่สำคัญไม่แพ้สิ่งอื่น คือ การบริหารรายรับ-รายจ่ายของเรา เพราะบางคนมีรายได้มากมายแต่ก็ยังเป็นหนี้ มีการใช้เงินแบบไม่มีสติ ขาดการจดบันทึกรายรับรายจ่าย หรือบางคนทำการจดบันทึกข้อมูลรายรับรายจ่ายลงในกระดาษแล้วเกิดการศูนย์หาย หรือจากสาเหตุต่าง ๆ ส่งผลให้ข้อมูลรายรับรายจ่ายที่ได้จดบันทึกมีความไม่ต่อเนื่อง และทุกวันนี้มีการใช้จ่ายเกิดขึ้นในชีวิตประจำวันมากมาย รายรับที่หามาได้ถูกใช้จ่ายออกไปจนหมด บางทีทำให้ไม่ทราบว่าใช้ทำอะไรไปบ้าง เพราะไม่สามารถจะย้อนกลับไปดูสิ่งที่เคยใช้จ่ายได้อย่างชัดเจน และบางครั้งอาจมีการลืมชำระบิลค่าใช้จ่ายต่าง ๆ ก่อนถึงกำหนดชําระเงิน ทำให้มีค่าใช้จ่ายเพิ่มขึ้นที่มาจากการชำระบิลล่าช้า คือดอกเบี้ยและค่าปรับต่าง ๆ ขึ้นได้
+	จากปัญหาดังกล่าว พบว่า ปัจจุบันผู้คนส่วนใหญ่มีโทรศัพท์มือถือที่ใช้งานบนระบบปฏิบัติการแอนดรอยด์ ยังมีการใช้งานเครือข่ายอินเตอร์เน็ตกันอย่างแพร่หลาย ผู้ศึกษาจึงมีความสนใจจะพัฒนาแอพพลิเคชันสำหรับการบันทึกข้อมูลรายรับ-รายจ่ายนี้ขึ้นมา เพื่อที่จะทำให้ผู้ใช้สามารถบันทึกรายรับ-รายจ่ายของตนเองผ่านโทรศัพท์มือถือแทนการจดบันทึกผ่านกระดาษ รวมถึงแอพพลิเคชันนี้มีระบบการแจ้งเตือนการชำระค่าใช้จ่ายให้กับผู้ใช้ และแอปพลิเคชันนี้ยังช่วยสรุปยอดค่าใช้จ่ายรายวัน รายเดือนหรือรายปี ออกเป็นหมวดหมู่ของรายการต่าง ๆ ผู้ใช้จึงสามารถมองเห็นรายจ่ายที่เกิดขึ้นของตนเองว่าใช้จ่ายกับสิ่งที่จำเป็นหรือมีประโยชน์หรือไม่ มากน้อยเพียงใด โดยไม่ต้องเสียเวลามาคำนวณเอง เพื่อที่จะได้ปรับปรุงพฤติกรรมการใช้เงินให้เหมาะสมกับรายได้ของตนเอง และอาจส่งผลต่อการปรับเปลี่ยนพฤติกรรมการใช้จ่ายได้อย่างเหมาะสมด้วย รวมถึงมีเงินเก็บออมเพื่อนำไปใช้ในอนาคตได้อีกด้วย
+
+  </p>
+  <div class="row" style="justify-content: center!important;">
+    <div class="info-box">
+    <div class="info-box-content">
+    <div class="image">
+     <img src="https://raw.githubusercontent.com/mim321/photo/master/1.png" alt="User Image" style="height:350px;" style="width:350px;">
+    </div>
+  </div>
+    <!-- /.info-box-content -->
+    </div>
+    <!-- /.info-box -->
+    </div>
+    <!-- /.row -->
+</fieldset>
+
+</section>
+<!-- /.content -->
+</div>
+
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.0.4
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="https://adminlte.io/themes/v3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="https://adminlte.io/themes/v3/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="https://adminlte.io/themes/v3/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="https://adminlte.io/themes/v3/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="https://adminlte.io/themes/v3/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="https://adminlte.io/themes/v3/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="https://adminlte.io/themes/v3/plugins/moment/moment.min.js"></script>
+<script src="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="https://adminlte.io/themes/v3/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="https://adminlte.io/themes/v3/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="https://adminlte.io/themes/v3/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="https://adminlte.io/themes/v3/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="https://www.masterhook.net/public/assets/dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="https://adminlte.io/themes/v3/dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="https://adminlte.io/themes/v3/dist/js/demo.js"></script>
+</body>
+</html>
